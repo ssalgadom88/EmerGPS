@@ -8,3 +8,5 @@ APIFONICA and/or Telestax API accounts
 Ubuntu 16.04 LAMP server
 JotForm development tool to generate base information
 MySQL database to store requests
+
+Video Presentation: http://bit.ly/emergpsvideo
