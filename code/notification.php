@@ -112,14 +112,14 @@ function checkSMS($api_url, $accountSID, $password, $smsuri) {
  * Set default variables 
  */
 
-// Specify Apifonica API URL
-$api_url = 'https://api.apifonica.com';
-// Specify your Apifonica account SID
-$accountSID = 'acc70569575-fa88-3d5a-a249-80423d9829ad';
-// Specify your Apifonica account password
-$password = 'auta9371ed9-6c48-3ea1-80d5-6f09450abd47';
-// Specify the message sender's number (this number must be mobile number belonging to the Apifonica account you have specified) 
-$from = '34668692533';
+// Specify API URL
+$api_url = 'XXXXXXXXXXX-UPDATE-HERE-WITH-YOUR-ACCOUNT-INFO-XXXXXXXXX';
+// Specify your account SID
+$accountSID = 'XXXXXXXXXXX-UPDATE-HERE-WITH-YOUR-ACCOUNT-INFO-XXXXXXXXX';
+// Specify your account password
+$password = 'XXXXXXXXXXX-UPDATE-HERE-WITH-YOUR-ACCOUNT-INFO-XXXXXXXXX';
+// Specify the message sender's number (this number must be mobile number belonging to your account you have specified) 
+$from = 'XXXXXXXXXXX-UPDATE-HERE-WITH-YOUR-ACCOUNT-INFO-XXXXXXXXX';
 
 /**
  * Set variables from POST
@@ -267,12 +267,12 @@ if ($action == 'sendsms') {
 		  <h3>Complete the form below to SIMULATE sending an SMS location alert to your trustee contact</h3>		
 		  <div class="form-group">
 		    <label for="InputNumbers">Your registered trustee contact:</label><br />
-		    <textarea class="form-control" id="InputNumbers" name="numbers" required readonly="readonly"><?php echo $contactnumber; ?></textarea>
+		    <textarea class="form-control" id="InputNumbers" name="numbers" required readonly><?php echo $contactnumber; ?></textarea>
 		  </div>
 
 		  <div class="form-group">
 		    <label for="InputMessage">Message to be sent:</label>
-		    <textarea class="form-control" id="InputMessage" name="message" required readonly="readonly">SIMULATION - <?php echo $name; ?> last known Latitude/Longitude location was the following <?php echo $gpslocation; ?> when an earthquake stroked nearby. - SIMULATION</textarea>
+		    <textarea class="form-control" id="InputMessage" name="message" required readonly>SIMULATION - <?php echo $name; ?> last known Latitude/Longitude location was the following <?php echo $gpslocation; ?> when an earthquake stroked nearby. - SIMULATION</textarea>
 		  </div>
 		  <button type="submit" class="btn btn-default">Send Your SIMULATION Message</button>
 		<?php } ?>
